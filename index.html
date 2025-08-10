@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UTSJR</title>
@@ -9,55 +8,11 @@
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <style>
-      /* Corrección del contenedor flex para que envuelva y no se desordene */
-      .flex-container {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: space-between !important;
-        align-items: flex-start !important;
-        width: 100% !important;
-      }
-
-      /* Estilo para el texto dentro del flex */
-      .flex-text {
-        width: 68% !important;
-        height: 450px;
-        box-sizing: border-box;
-        padding: 6%;
-        background-color: rgba(255, 255, 255, 0.37);
-      }
-
-      /* Estilo para la imagen dentro del flex */
-      .flex-image {
-        padding: 5%;
-        background-color: rgba(255, 255, 255, 0.37);
-        max-width: 30%;
-        height: auto;
-      }
-
-      /* Media query para pantallas pequeñas (móvil) */
-      @media (max-width: 768px) {
-        .flex-text,
-        .flex-image {
-          width: 100% !important;
-          margin-top: 20px;
-          max-width: 100% !important;
-        }
-      }
-
-      /* Ajuste para la imagen GIF principal */
-      .main-gif {
-        width: 100% !important;
-        height: auto !important;
-      }
-    </style>
 </head>
-<body style="background-image: url('scripts/img/index//Background Body.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-
+<body background="scripts/img/registro/background registro.jpg" style="background-size: cover; background-repeat: no-repeat;
+        background-position: center center; background-attachment: fixed;">
     <div>
-        <nav class="navbar navbar-expand-lg " style="color: rgb(255, 255, 255); background-color: rgb(52, 80, 131); ">
+        <nav class="navbar navbar-expand-lg " style="color: rgb(255, 255, 255); background-color: rgb(52, 80, 131);">
             <div class="container-fluid">
                 <div class="nav-item dropdown" style="margin-right: 25px;">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -74,7 +29,6 @@
                 <img src="scripts/img/index/soyUT.png" alt="" style="height: 40px; margin-left: 120px; margin-right: 10px; margin-right: 120px;">
                 <img src="scripts/img/index/UT.png" alt="" style="height: 25px; width: 400px; margin-right: 100px;">
 
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -84,7 +38,6 @@
                         <button class="btn btn-success" type="submit">Ir</button>
                     </form>
                 </div>
-
                 <div class="nav-item dropdown" style="margin-right: 20px;">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Accesos
@@ -96,10 +49,10 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                 </div>
-
             </div>
         </nav>
     </div>
+
     <div style="background-color:  rgb(52, 80, 131);">
         <ul class="nav nav-tabs justify-content-center">
             <li class="nav-item" style="width: 100px;">
@@ -117,14 +70,13 @@
         </ul>
     </div>
 
-    <!-- Cambié el div flex inline style a clase para aplicar CSS -->
-    <img src="scripts/img/index/Imaginarium_video_introducción (1).gif" alt="" class="main-gif">    
+    <img src="scripts/img/index/Imaginarium_video_introducción (1).gif" alt="" style="width: 100%; height: 700px;">    
 
     <br>
     <br>
 
-    <div class="flex-container">
-        <div class="flex-text">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; ">
+        <div style="width: 68%; height: 450px; box-sizing: border-box; padding: 6%;background-color: rgba(255, 255, 255, 0.37);">
             <h2>Imaginarium 5.0</h2>
             <br>
             <h5>
@@ -138,7 +90,7 @@
             </h5>
         </div>
         
-        <img src="scripts/img/index/logo5.0.png" alt="" class="flex-image">
+        <img src="scripts/img/index/logo5.0.png" alt="" style="padding: 5%; background-color: rgba(255, 255, 255, 0.37);">
         
     </div>
     <br>
