@@ -16,7 +16,7 @@
             <div class="container-fluid">
                 <div class="nav-item dropdown" style="margin-right: 25px;">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="scripts/img/index/menu.png" alt="Actitud lobo" width="40" height="40">
+                            <img src="scripts/img/index/menu.png" alt="Actitud lobo" class="img-fluid" style="max-height: 40px;">
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -26,11 +26,11 @@
                         </ul>
                 </div>
                 
-                <img src="scripts/img/index/soyUT.png" alt="" style="height: 40px; margin-left: 120px; margin-right: 10px; margin-right: 120px;">
-                <img src="scripts/img/index/UT.png" alt="" style="height: 25px; width: 400px; margin-right: 100px;">
+                <img src="scripts/img/index/soyUT.png" alt="" class="img-fluid" style="max-height: 40px;">
+                <img src="scripts/img/index/UT.png" alt="" class="img-fluid" style="max-height: 40px;">
 
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler w-100 w-md-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -70,107 +70,84 @@
         </ul>
     </div>
 
-<div class="container py-4">
-
-  <!-- Buscador centrado -->
-  <div class="d-flex justify-content-center mb-4">
-    <div class="input-group" style="max-width: 300px;">
-      <button class="btn btn-warning" type="button" id="button-addon1">Buscar</button>
-      <input type="text" class="form-control" placeholder="" aria-label="Buscar" aria-describedby="button-addon1">
-    </div>
-  </div>
-
-  <!-- Fila de tarjetas -->
-  <div class="row g-4">
-
-    <!-- Tarjeta 1 -->
-    <div class="col-12 col-md-6">
-      <div class="card h-100">
-        <div class="row g-0">
-          <div class="col-4">
-            <img src="scripts/img/Proyectos/CafeRaapidaLOGO.png" class="img-fluid rounded-start" alt="Cafe Rápida">
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <h5 class="card-title">Cafe Rápida</h5>
-              <p class="card-text">
-                Tu antojo sin filas, ordena, recoge y disfruta.
-              </p>
-              <a href="#" class="btn btn-primary">Ver más...</a>
-              <p class="card-text">
-                <small class="text-muted">Última actualización: 05/AGO/2025</small>
-              </p>
-            </div>
-          </div>
+    <div style="padding: 4%;">
+        <div class="input-group mb-3" style="width: 300px;">
+            <button class="btn btn-warning" type="button" id="button-addon1">Buscar</button>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
         </div>
-      </div>
-    </div>
-
-    <!-- Tarjeta 2 -->
-    <div class="col-12 col-md-6">
-      <div class="card h-100">
-        <div class="row g-0">
-          <div class="col-4">
-            <img src="scripts/img/Proyectos/Captura de pantalla 2025-08-10 053055.png" class="img-fluid rounded-start" alt="Proyecto 2">
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <h5 class="card-title">Título del proyecto</h5>
-              <p class="card-text">Breve descripción del proyecto...</p>
-              <a href="#" class="btn btn-primary">Ver más...</a>
-              <p class="card-text">
-                <small class="text-muted">Última actualización: DD/MM/AA</small>
-              </p>
+        <div class="card mb-3" style="width: 540px; height: 202px; float: inline-start;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="scripts/img/Proyectos/CafeRaapidaLOGO.png" class="img-fluid rounded-start" alt="..." style="height: 200px; width: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Cafe Rapida.</h5>
+                        <p class="card-text" style="height: 90px;">
+                            Tu antojo sin filas, ordena recoge y disfruta.
+                            <br>
+                            
+                        </p>
+                        <a href="#" class="btn btn-primary" style="float: inline-start;">Ver mas...</a>
+                        <p class="card-text"><small class="text-muted" style="float: right;">
+                            Ultima actualizacion.    
+                            05/AGO/2025</small>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Puedes seguir agregando más tarjetas con el mismo formato -->
-         <div class="col-12 col-md-6">
-      <div class="card h-100">
-        <div class="row g-0">
-          <div class="col-4">
-            <img src="scripts/img/Proyectos/" class="img-fluid rounded-start" alt="Proyecto 3">
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <h5 class="card-title">Título del proyecto</h5>
-              <p class="card-text">Breve descripción del proyecto...</p>
-              <a href="#" class="btn btn-primary">Ver más...</a>
-              <p class="card-text">
-                <small class="text-muted">Última actualización: DD/MM/AA</small>
-              </p>
+        <div class="card mb-3" style="width: 540px; height: 202px; float: right;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="scripts/img/Proyectos/p2.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo del proyecto.</h5>
+                        <p class="card-text" style="height: 90px;">Breve descripcion del proyecto...
+                        </p>
+                        <a href="#" class="btn btn-primary" style="float: inline-start;">Ver mas...</a>
+                        <p class="card-text"><small class="text-muted" style="float: right;">Ultima actualizacion.    DD/MM/AA</small></p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-    <!-- Puedes seguir agregando más tarjetas con el mismo formato -->
-         <div class="col-12 col-md-6">
-      <div class="card h-100">
-        <div class="row g-0">
-          <div class="col-4">
-            <img src="scripts/img/Proyectos/" class="img-fluid rounded-start" alt="Proyecto 4">
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <h5 class="card-title">Título del proyecto</h5>
-              <p class="card-text">Breve descripción del proyecto...</p>
-              <a href="#" class="btn btn-primary">Ver más...</a>
-              <p class="card-text">
-                <small class="text-muted">Última actualización: DD/MM/AA</small>
-              </p>
+    <div style="padding: 4%;">
+        <div class="card mb-3" style="width: 540px; height: 200px; float: inline-start;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo del proyecto.</h5>
+                        <p class="card-text" style="height: 90px;">Breve descripcion del proyecto...
+                        </p>
+                        <a href="#" class="btn btn-primary" style="float: inline-start;">Ver mas...</a>
+                        <p class="card-text"><small class="text-muted" style="float: right;">Ultima actualizacion.    DD/MM/AA</small></p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+        <div class="card mb-3" style="width: 540px; height: 200px; float: right;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo del proyecto.</h5>
+                        <p class="card-text" style="height: 90px;">Breve descripcion del proyecto...
+                        </p>
+                        <a href="#" class="btn btn-primary" style="float: inline-start;">Ver mas...</a>
+                        <p class="card-text"><small class="text-muted" style="float: right;">Ultima actualizacion.    DD/MM/AA</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-  </div>
-</div>
-
     
     
 
