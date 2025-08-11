@@ -72,17 +72,37 @@
         </ul>
     </div>
 
-   <!-- Contenedor que centra la imagen -->
+
+
+
+
+
+    
 <div style="
-  display: flex;               /* activa flexbox */
-  justify-content: center;     /* centra horizontal */
-  align-items: center;         /* centra vertical */
-  height: 100vh;               /* altura total de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;             /* para que no toque bordes en móviles */
+  box-sizing: border-box;    /* que el padding no afecte el tamaño */
 ">
   <img src="https://media.githubusercontent.com/media/Liz-Jacqueline/IMAGINARIUM5.0/refs/heads/master/scripts/img/index/gifdiego.gif" 
        alt="" 
-       style="width: 70%; height: 490px; object-fit: contain;">
+       style="
+         width: 70%;
+         max-width: 600px;    /* límite ancho máximo */
+         height: auto;       /* altura automática para mantener proporción */
+         max-height: 80vh;   /* que no sobrepase 80% altura de viewport */
+         object-fit: contain;
+       ">
 </div>
+
+
+
+
+
+
+    
 
     <br>
     <br>
